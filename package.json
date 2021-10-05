@@ -1,0 +1,31 @@
+{
+  "name": "tpt",
+  "version": "1.0.0",
+  "description": "Text presention program on command line",
+  "main": "tpt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HARDY8118/tpt.git"
+  },
+  "keywords": [
+    "tpt;",
+    "presentation"
+  ],
+  "author": "Harshit Vishnoi",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/HARDY8118/tpt/issues"
+  },
+  "homepage": "https://github.com/HARDY8118/tpt#readme",
+  "devDependencies": {
+    "ts-loader": "^9.2.6",
+    "webpack": "^5.57.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "typescript": "^4.4.3"
+  }
+}
