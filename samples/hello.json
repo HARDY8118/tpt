@@ -1,0 +1,60 @@
+{
+    "meta": {
+        "author": "Alex (alex@example.com)",
+        "version": "0.0.1"
+    },
+    "config": {
+        "min-width": 100
+    },
+    "slides": [
+        {
+            "title": "Shopping",
+            "content": [
+                {
+                    "type": "figlet",
+                    "text": "Alex",
+                    "options": {
+                        "font": "Arrows"
+                    }
+                },
+                {
+                    "type": "line",
+                    "style": "+=+"
+                },
+                {
+                    "type": "line",
+                    "width": 40
+                },
+                {
+                    "type": "line",
+                    "width": 40
+                },
+                {
+                    "type": "list",
+                    "heading": "Alex's shopping list",
+                    "items": [
+                        "Juice",
+                        "Beer",
+                        "Snacks"
+                    ]
+                },
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "text",
+                    "text": "Alex"
+                },
+                {
+                    "type": "line",
+                    "width": 20
+                },
+                {
+                    "type": "line",
+                    "width": 24
+                }
+            ]
+        }
+    ]
+}
