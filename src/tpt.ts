@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { constraints } from './constraints';
 import { readFile } from './utils';
 import { presentation } from './types';
