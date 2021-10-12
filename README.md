@@ -74,7 +74,6 @@ Draw line
 |--|--|--|--|--|
 | type | &check; | String | "line" | Specifies type |
 | width | &cross; | Number | &lt;terminal width&gt; | Width of line in charactters |
-| | | | | Use 0 for blank line |
 | style | &cross; | String | "-" | Line style using (length **1** or **3**)
 | | | | | **1** Use same character throughtout |
 | | | | | **3** 1st and 3rd characters on sides, 2nd in minddle |

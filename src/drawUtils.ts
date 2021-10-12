@@ -5,8 +5,7 @@ import figlet from 'figlet';
  * Clear output window
  */
 export function clearscreen() {
-    // process.stdout.write('\033c');
-    process.stdout.write('\x1b[2J');
+    process.stdout.write("\u001b[2J\u001b[0;0H");
 }
 
 /**
@@ -15,7 +14,6 @@ export function clearscreen() {
  * @param count number of times to print
  */
 function drawLoop(text: string, count: number) {
-    assert(text.length == 1, "Invalid character to print");
     assert(count > 0, "Count cannot be negative")
 
     while (count--) {
@@ -29,7 +27,7 @@ function drawLoop(text: string, count: number) {
  * @param style Line style
  */
 export function drawLine(width = process.stdout.columns, style = "-") {
-    assert(width > 1, "Width cannot be less than 1")
+    assert(width > 0, "Width cannot be less than 0")
     assert(style.length > 0, "Empty line style");
     assert(style.length == 1 || style.length == 3, "Invalid line style");
     if (style.length == 3) {

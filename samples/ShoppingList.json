@@ -1,0 +1,147 @@
+{
+    "meta": {
+        "author": "Alex (alex@example.com)",
+        "version": "0.0.1"
+    },
+    "config": {
+        "min-width": 60
+    },
+    "slides": [
+        {
+            "title": "ShoppingList",
+            "content": [
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "figlet",
+                    "text": "Alex",
+                    "options": {
+                        "font": "Arrows"
+                    }
+                },
+                {
+                    "type": "line",
+                    "style": "+=+"
+                },
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "line",
+                    "style": "-"
+                },
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "list",
+                    "heading": "Alex's shopping list",
+                    "items": [
+                        "Fruits",
+                        "Snacks",
+                        "Drinks"
+                    ]
+                },
+                {
+                    "type": "line",
+                    "style": "-"
+                }
+            ]
+        },
+        {
+            "title": "Fruits",
+            "content": [
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "list",
+                    "heading": "Alex's fruits list",
+                    "margin": 2,
+                    "items": [
+                        "Bananas",
+                        "Apples",
+                        "Grapes"
+                    ]
+                },
+                {
+                    "type": "line",
+                    "style": "-"
+                }
+            ]
+        },
+        {
+            "title": "Snacks",
+            "content": [
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "list",
+                    "heading": "Alex's snacks list",
+                    "margin": 6,
+                    "style": "- ",
+                    "items": [
+                        "Chips",
+                        "Biscuits",
+                        "Cookies",
+                        "Pastries",
+                        "Fries",
+                        "Crackers"
+                    ]
+                },
+                {
+                    "type": "line",
+                    "style": "-"
+                }
+            ]
+        },
+        {
+            "title": "Drinks",
+            "content": [
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "line",
+                    "style": " "
+                },
+                {
+                    "type": "list",
+                    "heading": "Alex's drinks list",
+                    "margin": 4,
+                    "style": "item: ",
+                    "items": [
+                        "Beer",
+                        "Juice",
+                        "Water",
+                        "Cola"
+                    ]
+                },
+                {
+                    "type": "line",
+                    "style": "-"
+                }
+            ]
+        }
+    ]
+}
