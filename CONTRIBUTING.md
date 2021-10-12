@@ -9,3 +9,4 @@ Following can be added
 - New styles
 - New shapes/charts
 - Controls to make more interactive
+- Samples
