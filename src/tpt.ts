@@ -130,17 +130,22 @@ function main(): void {
             process.stdin.on('data', (key: string) => {
                 switch (key) {
                     case '\u001B\u005B\u0042': // Down
-                    case '\u001B\u005B\u0043': { // Right
+                    case '\u001B\u005B\u0043': // Right
+                    case '\u006B':             // K
+                    case '\u006C': {           // L
                         _presentation.nextSlide();
                         break;
                     }
                     case "\u001B\u005B\u0041": // Up
-                    case '\u001B\u005B\u0044': { // Left
+                    case '\u001B\u005B\u0044': // Left
+                    case '\u006A':             // J
+                    case '\u0068': {           // H
                         _presentation.prevSlide();
                         break
                     }
-                    case '\u0003': // Ctrl + C
-                    case '\u001B': { // Esc
+                    case '\u0003':   // Ctrl + C
+                    case '\u001B':   // Esc
+                    case '\u0071': { // q
                         process.exit(0);
                     }
                 }
