@@ -1,5 +1,5 @@
 {
-  "name": "tpt",
+  "name": "textpresentation",
   "version": "1.0.0",
   "description": "Text presention program on command line",
   "main": "./dist/src/tpt.js",
