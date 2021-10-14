@@ -139,4 +139,4 @@ Show plain text
 
 
 # Contributing
-Refer to [CONTRIBUTING.md]() for instructions on how to contribute.
+Refer to [CONTRIBUTING.md](https://github.com/HARDY8118/tpt/blob/main/CONTRIBUTING.md) for instructions on how to contribute.
