@@ -4,10 +4,31 @@ Text presention program on command line using `node.js`
 This program is inspired from [tpp](https://github.com/cbbrowne/tpp).
 
 # Contents
+- [Installation](#Installation)
 - [Usage](#Usage)
 - [Controls](#Controls)
 - [Slides](#Slides)
 - [Contributing](#Contributing)
+
+# Installation
+The program can be installed using npm/pnpm.
+```bash
+npm install -g textpresentation # npm
+# -- or --
+pnpm install -g textpresentation # pnpm
+```
+
+**OR**
+
+Compile from source
+```bash
+git clone git@github.com:HARDY8118/tpt.git
+cd tpt
+pnpm install # for pnpm
+pnpm run build
+pnpm link
+```
+
 
 # Usage
 The program can be used to display presentations from using only command line.
