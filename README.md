@@ -1,5 +1,8 @@
 # tpt
-Text presention program on command line using `node.js`
+Text presention program on command line.
+
+![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![NODE.JS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 This program is inspired from [tpp](https://github.com/cbbrowne/tpp).
 
