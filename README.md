@@ -14,11 +14,9 @@ This program is inspired from [tpp](https://github.com/cbbrowne/tpp).
 - [Contributing](#Contributing)
 
 # Installation
-The program can be installed using npm/pnpm.
+The program can be installed using npm.
 ```bash
 npm install -g textpresentation # npm
-# -- or --
-pnpm install -g textpresentation # pnpm
 ```
 
 **OR**
@@ -27,9 +25,9 @@ Compile from source
 ```bash
 git clone git@github.com:HARDY8118/tpt.git
 cd tpt
-pnpm install # for pnpm
-pnpm run build
-pnpm link
+npm install # for pnpm
+npm run build
+npm link
 ```
 
 
