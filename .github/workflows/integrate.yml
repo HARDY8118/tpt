@@ -31,5 +31,5 @@ jobs:
     - name: Build app
       run: yarn build
     - name: Run test
-      run: npm test
+      run: yarn test
     - run: echo "Done"

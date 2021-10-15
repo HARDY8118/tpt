@@ -4,15 +4,11 @@
   "description": "Text presention program on command line",
   "main": "./dist/src/tpt.js",
   "scripts": {
-    "test": "pnpx jest",
+    "test": "yarn jest",
     "build": "tsc",
-    "run": "tsc && node ./dist/src/tpt.js",
-    "preinstall": "tsc"
+    "run": "tsc && node ./dist/src/tpt.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/HARDY8118/tpt.git"
-  },
+  "repository": "https://github.com/HARDY8118/tpt.git",
   "keywords": [
     "tpt;",
     "presentation"
@@ -35,10 +31,11 @@
   },
   "dependencies": {
     "figlet": "^1.5.2",
-    "typescript": "^4.4.3",
+    "typescript": "^4.4.4",
     "validate": "^5.1.0"
   },
   "bin": {
     "tpt": "./dist/tpt.js"
-  }
+  },
+  "private": false
 }

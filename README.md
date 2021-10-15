@@ -14,8 +14,10 @@ This program is inspired from [tpp](https://github.com/cbbrowne/tpp).
 - [Contributing](#Contributing)
 
 # Installation
-The program can be installed using npm.
+The program can be installed using npm/yarn.
 ```bash
+yarn global add textpresentation # yarn
+#    OR
 npm install -g textpresentation # npm
 ```
 
@@ -25,9 +27,9 @@ Compile from source
 ```bash
 git clone git@github.com:HARDY8118/tpt.git
 cd tpt
-npm install # for pnpm
-npm run build
-npm link
+yarn install
+yarn run build
+yarn link
 ```
 
 
@@ -67,7 +69,7 @@ Presentations can be created using any text editor and are defined using JSON st
                 {"type":"text", "text": "content"},
                 {"type":"line", "style": "-"},
             ]
-            }
+        }
     ]
 }
 ```

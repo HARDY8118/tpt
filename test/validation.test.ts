@@ -1,4 +1,3 @@
-import { ValidationError } from 'validate';
 import { constraints } from '../src/constraints';
 
 describe("Line validation", () => {

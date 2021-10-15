@@ -20,9 +20,8 @@ export default class tpt {
 
     check() {
         if (this.tpt.config && this.tpt.config["min-width"] && this.tpt.config["min-width"] > process.stdout.columns) {
-            process.stdout.write("Size of output window is less than minimum presentation width\n");
-            process.stdout.write("Minimum output window size required: " + this.tpt.config["min-width"] + " characters\n\n");
-            process.exit(2);
+            throw new Error(`Size of output window is less than minimum presentation width \n 
+            "Minimum output window size required: ${this.tpt.config["min-width"]} characters\n\n`);
         }
         for (let slide of this.tpt.slides) {
             for (let item of slide.content) {
@@ -49,6 +48,7 @@ export default class tpt {
                 }
             }
         }
+        return true;
     }
 
     private drawSlide() {
@@ -99,15 +99,15 @@ export default class tpt {
             this.drawSlide();
         }
     }
+
     prevSlide() {
         if (this._slideIndex > 0) {
             this._slideIndex--;
             this.drawSlide();
         }
     }
-    status() {
-        // TODO
-        // Show status (slide of total, filename)
+    slidesCount() {
+        return this.tpt.slides.length;
     }
 }
 
@@ -122,6 +122,10 @@ function main(): void {
         const _presentation = new tpt(process.argv[2]);
 
         if (_presentation) {
+            if (!_presentation.check()) {
+                throw new Error("Invalid slide format");
+            }
+
             _presentation.nextSlide();
             process.stdin.setRawMode(true);
             process.stdin.resume();
@@ -154,4 +158,6 @@ function main(): void {
     }
 }
 
-main()
+if (require.main === module) {
+    main()
+}
