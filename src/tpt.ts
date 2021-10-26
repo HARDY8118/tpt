@@ -87,7 +87,8 @@ export default class tpt {
                     item = <contentHchart>item;
                     item.showValues = true;
                     item.style = "■";
-                    utils.hchart(item.items)
+                    utils.hchart(item.items, item.showValues, item.style);
+                    break;
                 }
                 default: {
                     throw new Error("Invalid type");

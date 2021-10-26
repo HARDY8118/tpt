@@ -2,11 +2,11 @@
   "name": "textpresentation",
   "version": "1.0.0",
   "description": "Text presention program on command line",
-  "main": "./dist/src/tpt.js",
+  "main": "./dist/tpt.js",
   "scripts": {
     "test": "yarn jest",
     "build": "tsc",
-    "run": "tsc && node ./dist/src/tpt.js"
+    "run": "tsc && node ./dist/tpt.js"
   },
   "repository": "https://github.com/HARDY8118/tpt.git",
   "keywords": [
