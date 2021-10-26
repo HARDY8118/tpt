@@ -44,6 +44,7 @@ export default class tpt {
                     }
                     case "hchart": {
                         constraints.hchart.validate(item);
+                        break;
                     }
                     default: {
                         throw new Error("Invalid type");
