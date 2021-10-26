@@ -30,3 +30,10 @@ export interface presentation {
     config: any,
     slides: any
 }
+
+export interface contentHchart {
+    type: string,
+    items: (string|number)[][],
+    showValues?: boolean,
+    style?: string
+}

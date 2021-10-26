@@ -80,6 +80,24 @@ export function text(text: string, alignment = "left") {
         drawLoop(" ", process.stdout.columns - text.length);
     }
 }
-//hchart◼◼◼◼ 
+
+export function hchart(items: (any)[][], showValues = true, style = "■") {
+    assert(items.length > 0, "List can't be empty")
+    let _maxKeySize = 0;
+
+    // Checking item size and computing max key size
+    for (let _item of items) {
+        assert(_item.length == 2, "Item can have only key and value");
+        _maxKeySize = _maxKeySize < _item[0].length ? _item[0].length : _maxKeySize;
+    }
+
+    for (let _item of items) {
+        process.stdout.write(_item[0].padEnd(_maxKeySize) + " │");
+        drawLoop(style, _item[1]);
+        showValues && process.stdout.write(" " + _item[1]);
+        process.stdout.write("\n");
+    }
+}
+
 //checkbox
 //radio

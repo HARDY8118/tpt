@@ -41,5 +41,17 @@ export const constraints = {
     text: new Schema({
         type: { type: String, required: true, enum: ["text"] },
         text: { type: String, required: true }
+    }),
+    hchart: new Schema({
+        type: { type: String, required: true, enum: ["hchart"] },
+        items: {
+            type: Array,
+            each: {
+                type: [String, Number]
+            },
+            length: {
+                min: 1
+            }
+        }
     })
 }

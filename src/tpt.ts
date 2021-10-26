@@ -3,7 +3,7 @@
 import { constraints } from './constraints';
 import { readFile } from './utils';
 import { presentation } from './types';
-import { contentLine, contentList, contentFiglet, contentText } from './types';
+import { contentLine, contentList, contentFiglet, contentText, contentHchart } from './types';
 import * as utils from './drawUtils';
 
 export default class tpt {
@@ -42,6 +42,9 @@ export default class tpt {
                         constraints.text.validate(item);
                         break;
                     }
+                    case "hchart": {
+                        constraints.hchart.validate(item);
+                    }
                     default: {
                         throw new Error("Invalid type");
                     }
@@ -79,6 +82,12 @@ export default class tpt {
                     item = <contentText>item;
                     utils.text(item.text);
                     break;
+                }
+                case "hchart": {
+                    item = <contentHchart>item;
+                    item.showValues = true;
+                    item.style = "■";
+                    utils.hchart(item.items)
                 }
                 default: {
                     throw new Error("Invalid type");
