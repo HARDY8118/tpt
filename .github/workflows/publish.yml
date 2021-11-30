@@ -26,10 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Check PWD
-      run: pwd
-    - name: Check contents
-      run: ls
     - name: Install dependencies
       run: yarn install
     - name: Build app
@@ -37,3 +33,7 @@ jobs:
     - name: Run test
       run: yarn test
     - run: echo "Done"
+    - name: Publish to 'npm'
+      run: npm publish --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
