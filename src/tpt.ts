@@ -86,8 +86,8 @@ export default class tpt {
                 }
                 case "hchart": {
                     item = <contentHchart>item;
-                    item.showValues = true;
-                    item.style = "■";
+                    item.showValues = (typeof item.showValues !== undefined ? item.showValues : true);
+                    item.style = item.style || "■";
                     utils.hchart(item.items, item.showValues, item.style);
                     break;
                 }

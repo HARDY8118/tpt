@@ -140,6 +140,17 @@
                 {
                     "type": "line",
                     "style": "-"
+                },
+                {
+                    "type": "hchart",
+                    "items":[
+                        ["Beer",4],
+                        ["Juice",3],
+                        ["Water",7],
+                        ["Cola",3]
+                    ],
+                    "showValues": false,
+                    "style": "="
                 }
             ]
         }

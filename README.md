@@ -159,8 +159,30 @@ Show plain text
 | Property | Required | Type | Default value | Description |
 |--|--|--|--|--|
 | type | &check; | String | "text" | Specifies type |
-| text | &check; | String | String | Text to display |
+| text | &check; | String | | Text to display |
 
+### Hchart
+Show horizontal bar chart
+
+```json
+{
+    "type": "hchart",
+    "items": [
+        "item1": value1,
+        "item2": value2,
+        "item3": value3
+    ],
+    "showValues": true,
+    "style": "■"
+}
+```
+
+| Property | Required | Type | Default value | Description |
+|--|--|--|--|--|
+| type | &check; | String | "text" | Specifies type |
+| items | &check; | [[String, Number]] | | Items and values |
+| showValues | &cross; | Boolean | true | Show absolute values |
+| style | &cross; | String | "■" | Chart style |
 
 # Contributing
 Refer to [CONTRIBUTING.md](https://github.com/HARDY8118/tpt/blob/main/CONTRIBUTING.md) for instructions on how to contribute.

@@ -52,6 +52,8 @@ export const constraints = {
             length: {
                 min: 1
             }
-        }
+        },
+        showValues: { type: Boolean, required: false },
+        style: { type: String, required: false }
     })
 }
