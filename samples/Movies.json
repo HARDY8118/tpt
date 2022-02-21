@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "author": "Bob (bob@example.com)",
+    "version": "1"
+  },
+  "config": {
+    "min-width": 153
+  },
+  "slides": [
+    {
+      "title": "Movies to watch",
+      "content": [
+        {
+          "type": "line",
+          "style": " "
+        },
+        {
+          "type": "line",
+          "style": " "
+        },
+        {
+          "type": "figlet",
+          "text": "Movies",
+          "options": {
+            "font": "Standard"
+          }
+        },
+        {
+          "type": "line",
+          "style": " "
+        },
+        {
+          "type": "figlet",
+          "text": "To",
+          "options": {
+            "font": "Standard"
+          }
+        },
+        {
+          "type": "line",
+          "style": " "
+        },
+        {
+          "type": "figlet",
+          "text": "Watch",
+          "options": {
+            "font": "Standard"
+          }
+        }
+      ]
+    },
+    {
+      "title": "List of Movies",
+      "content": [
+        {
+          "type": "hchart",
+          "items": [
+            ["The Shawshank Redemption (1994)", 92],
+            ["The Godfather (1972)", 91],
+            ["The Godfather: Part II (1974)", 90],
+            ["The Dark Knight (2008)", 90],
+            ["12 Angry Men (1957)", 89],
+            ["Schindler's List (1993)", 89],
+            ["The Lord of the Rings: The Return of the King (2003)", 89],
+            ["Pulp Fiction (1994)", 88],
+            ["The Good, the Bad and the Ugly (1966)", 88],
+            ["The Lord of the Rings: The Fellowship of the Ring (2001)", 88],
+            ["Fight Club (1999)", 87]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Shawshank Redemption (1994)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "The Shawshank Redemption",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (1994)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 4 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 4
+      }
+    },
+    {
+      "title": "The Godfather (1972)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "The Godfather",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (1972)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 6 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 6
+      }
+    },
+    {
+      "title": "The Godfather Part II (1974)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "The Godfather Part II",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (1974)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 3 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 3
+      }
+    },
+    {
+      "title": "The Dark Knight (2008)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "The Dark Knight",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (2008)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 5 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 5
+      }
+    },
+    {
+      "title": "12 Angry Men (1957)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "12 Angry Men",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (1957)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 4 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 4
+      }
+    },
+    {
+      "title": "Schindler's List (1993)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "Schindler's List",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (1993)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 5 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 5
+      }
+    },
+    {
+      "title": "The Lord of the Rings: The Return of the King (2003)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "The Lord of the Rings: The Return of the King",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (2003)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 5 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 5
+      }
+    },
+    {
+      "title": "Pulp Fiction (1994)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "Pulp Fiction",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (1994)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 3 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 3
+      }
+    },
+    {
+      "title": "The Good, the Bad and the Ugly (1966)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "The Good, the Bad and the Ugly",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (1966)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 5 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 5
+      }
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "The Lord of the Rings: The Fellowship of the Ring",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (2001)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 3 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 3
+      }
+    },
+    {
+      "title": "Fight Club",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "Fight Club",
+          "options": { "font": "Standard" }
+        },
+        { "type": "line", "style": "-" },
+        { "type": "text", "text": "Released: (1999)" },
+        { "type": "line", "style": " " },
+        { "type": "line", "style": " " },
+        { "type": "text", "text": "Next after 4 seconds" }
+      ],
+      "timming": {
+        "NextAfter": 4
+      }
+    }
+  ]
+}

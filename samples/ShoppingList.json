@@ -1,7 +1,7 @@
 {
     "meta": {
         "author": "Alex (alex@example.com)",
-        "version": "0.0.1"
+        "version": "1"
     },
     "config": {
         "min-width": 60

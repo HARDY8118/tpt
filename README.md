@@ -46,8 +46,8 @@ Once presentation is started, use the following keys to navigate
 
 | Key | Function |
 |--|--|
-| Down, Right | Go to next slide |
-| Up, Left | Go back to previous slide |
+| Down, Right, K, L | Go to next slide |
+| Up, Left, J, H | Go back to previous slide |
 | Esc | End presentation |
 
 
@@ -64,11 +64,14 @@ Presentations can be created using any text editor and are defined using JSON st
     },
     "slides":[
         {
-            "title":"<Slide title>",
-            "content":[
+            "title": "<Slide title>",
+            "content": [
                 {"type":"text", "text": "content"},
                 {"type":"line", "style": "-"},
-            ]
+            ],
+            "timming": {
+                "NextAfter": 4
+            }
         }
     ]
 }
@@ -82,6 +85,7 @@ Following items can be used in slides.
 - [List](###List)
 - [Figlet](###Figlet)
 - [Text](###Text)
+- [Hchart](###Hchart)
 
 
 ### Line
@@ -168,9 +172,9 @@ Show horizontal bar chart
 {
     "type": "hchart",
     "items": [
-        ["item1",value1],
-        ["item2", value2],
-        ["item3", value3]
+        ["item1", 1],
+        ["item2", 2],
+        ["item3", 3]
     ],
     "showValues": true,
     "style": "■"
@@ -183,6 +187,13 @@ Show horizontal bar chart
 | items | &check; | [[String, Number]] | | Items and values |
 | showValues | &cross; | Boolean | true | Show absolute values |
 | style | &cross; | String | "■" | Chart style |
+
+## Timming
+Additionally a timming object can be provided with slide to control timming of slide. The supported properties are:
+
+| Property | Type | Description |
+| -- | -- | -- |
+| NextAfter | Number | Scroll to next page after specified seconds |
 
 # Contributing
 Refer to [CONTRIBUTING.md](https://github.com/HARDY8118/tpt/blob/main/CONTRIBUTING.md) for instructions on how to contribute.
