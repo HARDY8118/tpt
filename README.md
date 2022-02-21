@@ -3,6 +3,7 @@ Text presention program on command line.
 
 ![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![NODE.JS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Known Vulnerabilities](https://snyk.io/test/github/HARDY8118/tpt/badge.svg)
 
 This program is inspired from [tpp](https://github.com/cbbrowne/tpp).
 
