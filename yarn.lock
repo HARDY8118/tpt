@@ -912,6 +912,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@eivifj/dot@^1.0.1":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@eivifj/dot/-/dot-1.0.3.tgz#b3a6d9662cd84ff4105e0f05620d1045e9d0d9fc"
+  integrity sha512-UE2x9N7XD/1qqtXA+4CZPD1RQAlM0lEdXdy09CJ/wNR+mgGKqwLRH4BGGfOAWwwz06pIT3c2tC4gvXbntGAeMA==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -1666,11 +1671,6 @@ domexception@^2.0.1:
   integrity sha512-yxJ2mFy/sibVQlu5qHjOkf9J3K6zgmCxgJ94u2EdvDOV09H+32LtRswEcUsmUWN72pVLOEnTSRaIVVzVQgS0dg==
   dependencies:
     webidl-conversions "^5.0.0"
-
-eivindfjeldstad-dot@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/eivindfjeldstad-dot/-/eivindfjeldstad-dot-0.0.1.tgz#22fc976bfaf306e0839a31db8e8213480fafb893"
-  integrity sha1-IvyXa/rzBuCDmjHbjoITSA+vuJM=
 
 electron-to-chromium@^1.3.867:
   version "1.3.870"
@@ -3183,13 +3183,13 @@ v8-to-istanbul@^8.1.0:
     convert-source-map "^1.6.0"
     source-map "^0.7.3"
 
-validate@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/validate/-/validate-5.1.0.tgz#12d685e346067646cba491b27994ad98b6319fce"
-  integrity sha512-Y+vJv+xR3XsaQM8W1rQvwc6is/sgCUBv3lvNKc2DZ1HcVcEWAaHVSFB5uoxkQnw2riUq77Rg5nv1u8YuuSu/Zw==
+validate@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/validate/-/validate-5.2.0.tgz#fe7355c1644092b67dd07731ad5716cb99f689a5"
+  integrity sha512-pVADd6GfDT7bALYvvzhfHnfmxCDem2bG7lGY3mwHzY7ktMH/SaczoF+eKkGokQEdGKozkJvyuOiSfQEHXp4zIA==
   dependencies:
+    "@eivifj/dot" "^1.0.1"
     component-type "1.2.1"
-    eivindfjeldstad-dot "0.0.1"
     typecast "0.0.1"
 
 w3c-hr-time@^1.0.2:

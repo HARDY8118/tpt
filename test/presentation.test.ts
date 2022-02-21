@@ -1,9 +1,15 @@
 import tpt from '../src/tpt';
 import { join } from 'path';
 
-const _testPresentation = new tpt(join(__dirname, "..", "samples", "ShoppingList.json"));
 
 test("Shopping list", () => {
-    _testPresentation.check();
+    const _tpt = new tpt(join(__dirname, "..", "samples", "ShoppingList.json"));
+    _tpt.check();
+    expect(true).toBe(true);
+})
+
+test("Movies", () => {
+    const _tpt = new tpt(join(__dirname, "..", "samples", "Movies.json"));
+    _tpt.check();
     expect(true).toBe(true);
 })

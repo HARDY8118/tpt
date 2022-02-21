@@ -87,7 +87,7 @@ export function hchart(items: (any)[][], showValues = true, style = "■") {
 
     // Checking item size and computing max key size
     for (let _item of items) {
-        assert(_item.length == 2, "Item can have only key and value");
+        assert(_item.length == 2, "Item can have only key and value: "+_item[0]);
         _maxKeySize = _maxKeySize < _item[0].length ? _item[0].length : _maxKeySize;
     }
 
