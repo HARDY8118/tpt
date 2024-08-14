@@ -37,5 +37,5 @@
   "bin": {
     "tpt": "./dist/tpt.js"
   },
-  "private": false
+  "packageManager": "yarn@4.4.0"
 }
