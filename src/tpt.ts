@@ -172,7 +172,7 @@ function main(): void {
           switch (key) {
             case "\u001B\u005B\u0042": // Down
             case "\u001B\u005B\u0043": // Right
-            case "\u006B": // K
+            case "\u006A": // J
             case "\u006C": {
               // L
               _presentation.resetTimeout();
@@ -181,7 +181,7 @@ function main(): void {
             }
             case "\u001B\u005B\u0041": // Up
             case "\u001B\u005B\u0044": // Left
-            case "\u006A": // J
+            case "\u006B": // K
             case "\u0068": {
               // H
               _presentation.resetTimeout();
