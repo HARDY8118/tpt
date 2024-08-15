@@ -2,13 +2,14 @@
 
 import { constraints } from "./constraints";
 import { readFile } from "./utils";
-import { presentation } from "./types";
 import {
   contentLine,
   contentList,
   contentFiglet,
   contentText,
+  presentation,
   contentHchart,
+  contentHtree,
 } from "./types";
 import * as utils from "./drawUtils";
 
@@ -57,6 +58,10 @@ export default class tpt {
             constraints.hchart.validate(item);
             break;
           }
+          case "htree": {
+            constraints.htree.validate(item);
+            break;
+          }
           default: {
             throw new Error("Invalid type");
           }
@@ -81,7 +86,8 @@ export default class tpt {
           item = <contentLine>item;
           item.width = item.width || process.stdout.columns;
           item.style = item.style || "-";
-          utils.drawLine(item.width, item.style);
+
+          utils.drawLine(item);
           break;
         }
         case "list": {
@@ -89,17 +95,21 @@ export default class tpt {
           item.style = item.style || "> ";
           item.margin = item.margin || 0;
           item.heading = item.heading || "";
-          utils.drawList(item.items, item.style, item.margin, item.heading);
+
+          utils.drawList(item);
           break;
         }
         case "figlet": {
           item = <contentFiglet>item;
-          utils.figletText(item.text, item.options);
+
+          utils.figletText(item);
           break;
         }
         case "text": {
           item = <contentText>item;
-          utils.text(item.text);
+          item.align = item.align || "left";
+
+          utils.text(item);
           break;
         }
         case "hchart": {
@@ -107,7 +117,20 @@ export default class tpt {
           item.showValues =
             typeof item.showValues !== undefined ? item.showValues : true;
           item.style = item.style || "■";
-          utils.hchart(item.items, item.showValues, item.style);
+
+          utils.hchart(item);
+          break;
+        }
+        case "htree": {
+          item = <contentHtree>item;
+          item.name = item.name || "";
+          item.style = item.style || {};
+          item.style.spaces = item.style.spaces || 2;
+          item.style.itemMid = item.style.itemMid || "├─";
+          item.style.itemLast = item.style.itemLast || "└─";
+          item.style.extender = item.style.extender || "│";
+
+          utils.htree(item);
           break;
         }
         default: {
@@ -118,13 +141,15 @@ export default class tpt {
   }
 
   nextSlide() {
-    console.log(this);
-    console.log(this.tpt);
     if (this._slideIndex == this.tpt.slides.length) {
       process.exit(0);
     } else if (this._slideIndex == this.tpt.slides.length - 1) {
       utils.clearscreen();
-      utils.text("End of Presentation\n");
+      utils.text({
+        type: "text",
+        text: "End of Presentation\n",
+        align: "left",
+      });
       this._slideIndex++;
     } else {
       this._slideIndex++;
@@ -193,6 +218,7 @@ function main(): void {
             case "\u0071": {
               // q
               _presentation.resetTimeout();
+              utils.clearscreen();
               process.exit(0);
             }
           }
