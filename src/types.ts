@@ -2,16 +2,16 @@ import { Options } from "figlet";
 
 export interface contentLine {
   type: string;
-  width?: number;
-  style?: string;
+  width: number;
+  style: string;
 }
 
 export interface contentList {
   type: string;
   items: string[];
-  style?: string;
-  margin?: 0;
-  heading?: string;
+  style: string;
+  margin: 0;
+  heading: string;
 }
 
 export interface contentFiglet {
@@ -23,6 +23,7 @@ export interface contentFiglet {
 export interface contentText {
   type: string;
   text: string;
+  align: string;
 }
 
 export interface presentation {
@@ -34,8 +35,8 @@ export interface presentation {
 export interface contentHchart {
   type: string;
   items: (string | number)[][];
-  showValues?: boolean;
-  style?: string;
+  showValues: boolean;
+  style: string;
 }
 
 export interface contentHtree {

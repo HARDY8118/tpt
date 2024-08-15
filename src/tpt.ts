@@ -86,7 +86,8 @@ export default class tpt {
           item = <contentLine>item;
           item.width = item.width || process.stdout.columns;
           item.style = item.style || "-";
-          utils.drawLine(item.width, item.style);
+
+          utils.drawLine(item);
           break;
         }
         case "list": {
@@ -94,17 +95,21 @@ export default class tpt {
           item.style = item.style || "> ";
           item.margin = item.margin || 0;
           item.heading = item.heading || "";
-          utils.drawList(item.items, item.style, item.margin, item.heading);
+
+          utils.drawList(item);
           break;
         }
         case "figlet": {
           item = <contentFiglet>item;
-          utils.figletText(item.text, item.options);
+
+          utils.figletText(item);
           break;
         }
         case "text": {
           item = <contentText>item;
-          utils.text(item.text);
+          item.align = item.align || "left";
+
+          utils.text(item);
           break;
         }
         case "hchart": {
@@ -112,7 +117,8 @@ export default class tpt {
           item.showValues =
             typeof item.showValues !== undefined ? item.showValues : true;
           item.style = item.style || "■";
-          utils.hchart(item.items, item.showValues, item.style);
+
+          utils.hchart(item);
           break;
         }
         case "htree": {
@@ -139,7 +145,11 @@ export default class tpt {
       process.exit(0);
     } else if (this._slideIndex == this.tpt.slides.length - 1) {
       utils.clearscreen();
-      utils.text("End of Presentation\n");
+      utils.text({
+        type: "text",
+        text: "End of Presentation\n",
+        align: "left",
+      });
       this._slideIndex++;
     } else {
       this._slideIndex++;
@@ -208,6 +218,7 @@ function main(): void {
             case "\u0071": {
               // q
               _presentation.resetTimeout();
+              utils.clearscreen();
               process.exit(0);
             }
           }
