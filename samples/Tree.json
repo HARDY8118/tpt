@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "author": "Alex (alex@example.com)",
+    "version": "1"
+  },
+  "config": {
+    "min-width": 60
+  },
+  "slides": [
+    {
+      "title": "Tree test",
+      "content": [
+        {
+          "type": "line",
+          "style": " "
+        },
+        {
+          "type": "htree",
+          "name": "ahbvashg", 
+          "style": {
+            "spaces": 6
+          },
+          "items": {
+            "item1": ["item11", "item12"],
+            "item2": ["item21", "item22", {"item23": ["item231"]}],
+            "item3": ["item21", "item22"]
+          }
+        }
+      ]
+    }
+  ]
+}
