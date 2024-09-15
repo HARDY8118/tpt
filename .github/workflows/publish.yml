@@ -6,8 +6,6 @@ name: Publish to NPM
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build:
@@ -21,6 +19,8 @@ jobs:
       with:
         node-version: '16.x'
         registry-url: 'https://registry.npmjs.org'
+    - name: Enable corepack
+      run: corepack enable
     - name: Install dependencies
       run: yarn install
     - name: Build app
