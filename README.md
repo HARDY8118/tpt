@@ -13,6 +13,7 @@ This program is inspired from [tpp](https://github.com/cbbrowne/tpp).
 - [Controls](#Controls)
 - [Slides](#Slides)
 - [Contributing](#Contributing)
+- [Other Projects](#other-projects)
 
 # Installation
 The program can be installed using npm/yarn.
@@ -132,7 +133,7 @@ Show bullet list
 ### Figlet
 Figlet can be used to draw large font ascii text.
 
-Internally this program uses [figlet](https://www.npmjs.com/package/figlet) package to draw figlet.
+Internally this program uses [figlet](https://github.com/patorjk/figlet.js) package to draw figlet.
 
 Refer [figlet](http://www.figlet.org/) documentation for figlet options.
 
@@ -198,3 +199,10 @@ Additionally a timming object can be provided with slide to control timming of s
 
 # Contributing
 Refer to [CONTRIBUTING.md](https://github.com/HARDY8118/tpt/blob/main/CONTRIBUTING.md) for instructions on how to contribute.
+
+# Other Projects
+A list of projects which can be useful for making text based presentations.
+
+- [Boxart](https://hardy8118.github.io/boxart/) Svelte app to easily create Unicode box arts.
+- [Diagon](https://github.com/ArthurSonzogni/Diagon) Interactive ASCII art diagram generators. 🌟
+- [taag](http://patorjk.com/software/taag/) Interactive FIG driver
