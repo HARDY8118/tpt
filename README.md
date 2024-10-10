@@ -158,7 +158,13 @@ Show plain text
 ```json
 {
     "type": "text",
-    "text" "sample text"
+    "text": "sample text",
+    "align": "left",
+    "style": {
+        "textColor": "black",
+        "backgroundColor": "bgWhite",
+        "styles": ["bold", "underline"]
+    }
 }
 ```
 
@@ -166,6 +172,15 @@ Show plain text
 |--|--|--|--|--|
 | type | &check; | String | "text" | Specifies type |
 | text | &check; | String | | Text to display |
+| align | &cross; | String | "left" | Text alignment |
+| style | &cross; | Object |  | [Text style properties](#text-style-properties) |
+
+#### Text style properties
+| Property | Description | Enum |
+|--|--|--|
+| textColor | Foreground text color | `black`<br>`red`<br>`green`<br>`yellow`<br>`blue`<br>`magenta`<br>`cyan`<br>`white`<br>`gray`<br>`grey` |
+| backgroundColor | Background color of text | `bgBlack`<br>`bgRed`<br>`bgGreen`<br>`bgYellow`<br>`bgBlue`<br>`bgMagenta`<br>`bgCyan`<br>`bgWhite` |
+| styles | List of formatting styles | `bold`<br>`dim`<br>`italic`<br>`underline`<br>`inverse`<br>`hidden`<br>`strikethrough` |
 
 ### Hchart
 Show horizontal bar chart
