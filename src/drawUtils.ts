@@ -8,7 +8,6 @@ import {
   contentList,
   contentText,
 } from "./types";
-import color from "colorts";
 
 /**
  * Print a character multiple times
@@ -87,126 +86,6 @@ export function figletText(content: contentFiglet) {
 export function text(content: contentText) {
   assert(content.text.length > 0, "Text cannot be empty");
 
-  if (content.style) {
-    let styledText = color(content.text);
-
-    if (content.style.backgroundColor) {
-      switch (content.style.backgroundColor) {
-        case "bgBlack": {
-          styledText = styledText.bgBlack;
-          break;
-        }
-        case "bgRed": {
-          styledText = styledText.bgRed;
-          break;
-        }
-        case "bgGreen": {
-          styledText = styledText.bgGreen;
-          break;
-        }
-        case "bgYellow": {
-          styledText = styledText.bgYellow;
-          break;
-        }
-        case "bgBlue": {
-          styledText = styledText.bgBlue;
-          break;
-        }
-        case "bgMagenta": {
-          styledText = styledText.bgMagenta;
-          break;
-        }
-        case "bgCyan": {
-          styledText = styledText.bgCyan;
-          break;
-        }
-        case "bgWhite": {
-          styledText = styledText.bgWhite;
-          break;
-        }
-      }
-    }
-
-    if (content.style.textColor) {
-      switch (content.style.textColor) {
-        case "black": {
-          styledText = styledText.black;
-          break;
-        }
-        case "red": {
-          styledText = styledText.red;
-          break;
-        }
-        case "green": {
-          styledText = styledText.green;
-          break;
-        }
-        case "yellow": {
-          styledText = styledText.yellow;
-          break;
-        }
-        case "blue": {
-          styledText = styledText.blue;
-          break;
-        }
-        case "magenta": {
-          styledText = styledText.magenta;
-          break;
-        }
-        case "cyan": {
-          styledText = styledText.cyan;
-          break;
-        }
-        case "white": {
-          styledText = styledText.white;
-
-          break;
-        }
-        case "gray": {
-          styledText = styledText.gray;
-          break;
-        }
-        case "grey": {
-          styledText = styledText.grey;
-          break;
-        }
-      }
-    }
-
-    if (content.style.styles) {
-      for (let style of content.style.styles) {
-        switch (style) {
-          case "bold": {
-            styledText = styledText.bold;
-            break;
-          }
-          case "dim": {
-            styledText = styledText.dim;
-            break;
-          }
-          case "italic": {
-            styledText = styledText.italic;
-            break;
-          }
-          case "underline": {
-            styledText = styledText.underline;
-            break;
-          }
-          case "inverse": {
-            styledText = styledText.inverse;
-            break;
-          }
-          case "strikethrough": {
-            styledText = styledText.strikethrough;
-            break;
-          }
-        }
-      }
-    }
-
-    content.text = styledText.toString();
-  }
-
   if (content.align == "left") {
     process.stdout.write(content.text);
   } else if (content.align == "center") {
@@ -224,15 +103,12 @@ export function hchart(content: contentHchart) {
   // Checking item size and computing max key size
   for (let _item of content.items) {
     assert(_item.length == 2, "Item can have only key and value: " + _item[0]);
-    _maxKeySize =
-      _maxKeySize < (_item[0] as string).length
-        ? (_item[0] as string).length
-        : _maxKeySize;
+    _maxKeySize = _maxKeySize < (_item[0] as string).length ? (_item[0] as string).length : _maxKeySize;
   }
 
   for (let _item of content.items) {
     process.stdout.write((_item[0] as string).padEnd(_maxKeySize) + " │");
-    drawLoop(content.style, _item[1] as number);
+    drawLoop(content.style, (_item[1] as number));
     content.showValues && process.stdout.write(" " + _item[1]);
     process.stdout.write("\n");
   }

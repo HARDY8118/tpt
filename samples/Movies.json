@@ -97,12 +97,7 @@
           "options": { "font": "Standard" }
         },
         { "type": "line", "style": "-" },
-        { "type": "text", "text": "Released: " },
-        {
-          "type": "text",
-          "text": "(1972)",
-          "style": { "styles": ["underline"] }
-        },
+        { "type": "text", "text": "Released: (1972)" },
         { "type": "line", "style": " " },
         { "type": "line", "style": " " },
         { "type": "text", "text": "Next after 6 seconds" }
