@@ -24,6 +24,11 @@ export interface contentText {
   type: string;
   text: string;
   align: string;
+  style?: {
+    textColor?: string;
+    backgroundColor?: string;
+    styles?: string[];
+  };
 }
 
 export interface presentation {
