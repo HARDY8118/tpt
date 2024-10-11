@@ -30,6 +30,7 @@
     "jest": "^27.2.5"
   },
   "dependencies": {
+    "cli-highlight": "^2.1.11",
     "colorts": "^0.1.63",
     "figlet": "^1.5.2",
     "typescript": "^4.5.4",

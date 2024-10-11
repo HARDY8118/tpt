@@ -141,4 +141,15 @@ export const constraints = {
     },
     { strip: false }
   ),
+  code: new Schema({
+    type: { type: String, required: true, enum: ["code"] },
+    lang: { type: String, required: false },
+    code: {
+      type: Array,
+      each: {
+        type: String,
+        required: true,
+      },
+    },
+  }),
 };

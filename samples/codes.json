@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "author": "Alex (alex@example.com)",
+    "version": "1"
+  },
+  "config": {
+    "min-width": 60
+  },
+  "slides": [
+    {
+      "title": "Intro",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "Hello World",
+          "options": { "font": "Computer" }
+        }
+      ]
+    },
+    {
+      "title": "C",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "C",
+          "options": { "font": "Small" }
+        },
+        {
+          "type": "line",
+          "style": "-"
+        },
+        {
+          "type": "code",
+          "lang": "c",
+          "code": [
+            "#include<stdio.h>",
+            "",
+            "int main(void) {",
+            "   printf(\"Hello world\");",
+            "   return 0;",
+            "}"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Golang",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "Golang",
+          "options": { "font": "Small" }
+        },
+        {
+          "type": "line",
+          "style": "-"
+        },
+        {
+          "type": "code",
+          "code": [
+            "import \"fmt\"",
+            "",
+            "func main() {",
+            "   fmt.Println(\"Hello world\")",
+            "}"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Python",
+      "content": [
+        {
+          "type": "figlet",
+          "text": "Python",
+          "options": { "font": "Small" }
+        },
+        {
+          "type": "line",
+          "style": "-"
+        },
+        {
+          "type": "code",
+          "code": [
+            "print(\"Hello world\")"
+          ]
+        }
+      ]
+    }
+  ]
+}

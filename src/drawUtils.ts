@@ -1,6 +1,7 @@
 import { strict as assert } from "assert";
 import figlet from "figlet";
 import {
+  contentCode,
   contentFiglet,
   contentHchart,
   contentHtree,
@@ -9,6 +10,7 @@ import {
   contentText,
 } from "./types";
 import color from "colorts";
+import highlight from "cli-highlight";
 
 /**
  * Print a character multiple times
@@ -294,6 +296,12 @@ export function htree(content: contentHtree) {
   recurseDepth(content.items);
 
   process.stdout.write(hTreeoutput);
+}
+
+export function code(content: contentCode) {
+  let options = { language: content.lang };
+
+  process.stdout.write(highlight(content.code.join("\n"), options));
 }
 
 //checkbox
