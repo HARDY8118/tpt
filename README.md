@@ -205,6 +205,25 @@ Show horizontal bar chart
 | showValues | &cross; | Boolean | true | Show absolute values |
 | style | &cross; | String | "■" | Chart style |
 
+### Code
+Code segment with highlighting
+
+```json
+{
+    "type": "code",
+    "lang": "",
+    "code": [
+        "console.log('Hello');"
+    ]
+}
+```
+
+| Property | Required | Type | Default value | Description |
+|--|--|--|--|--|
+| type | &check; | String | "text" | Specifies type |
+| lang | &cross; | String | undefined | Language of code (can be empty) |
+| code | &check; | String[] | true | Code to dispay, each line as array item |
+
 ## Timming
 Additionally a timming object can be provided with slide to control timming of slide. The supported properties are:
 
