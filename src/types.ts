@@ -55,9 +55,3 @@ export interface contentHtree {
     extender: string;
   };
 }
-
-export interface contentCode {
-  type: string;
-  lang: string;
-  code: Array<string>;
-}

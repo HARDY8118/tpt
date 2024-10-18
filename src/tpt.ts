@@ -10,7 +10,6 @@ import {
   presentation,
   contentHchart,
   contentHtree,
-  contentCode,
 } from "./types";
 import * as utils from "./drawUtils";
 
@@ -61,10 +60,6 @@ export default class tpt {
           }
           case "htree": {
             constraints.htree.validate(item);
-            break;
-          }
-          case "code": {
-            constraints.code.validate(item);
             break;
           }
           default: {
@@ -136,12 +131,6 @@ export default class tpt {
           item.style.extender = item.style.extender || "│";
 
           utils.htree(item);
-          break;
-        }
-        case "code": {
-          item = <contentCode>item;
-
-          utils.code(item);
           break;
         }
         default: {
