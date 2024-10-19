@@ -1,16 +1,16 @@
 {
   "name": "textpresentation",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Text presention program on command line",
   "main": "./dist/tpt.js",
   "scripts": {
     "test": "yarn build && yarn jest",
-    "build": "tsc",
+    "build": "npx tsc",
     "run": "tsc && node ./dist/tpt.js"
   },
   "repository": "https://github.com/HARDY8118/tpt.git",
   "keywords": [
-    "tpt;",
+    "tpt",
     "presentation"
   ],
   "author": "Harshit Vishnoi",
@@ -39,5 +39,8 @@
   "bin": {
     "tpt": "./dist/tpt.js"
   },
+  "files": [
+    "/dist"
+  ],
   "packageManager": "yarn@4.4.0"
 }
