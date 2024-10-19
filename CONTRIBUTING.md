@@ -1,5 +1,5 @@
 # Contributing
-Want to contribute, look on *Issues* tab for open issues. 
+Want to contribute, look on [*Issues*](https://github.com/HARDY8118/tpt/issues) tab for open issues. 
 
 OR
 
