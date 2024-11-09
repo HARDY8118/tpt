@@ -1,11 +1,11 @@
 {
   "name": "textpresentation",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "Text presention program on command line",
-  "main": "./dist/tpt.js",
+  "main": "dist/tpt.js",
   "scripts": {
     "test": "yarn build && yarn jest",
-    "build": "npx tsc",
+    "build": "tsc",
     "run": "tsc && node ./dist/tpt.js"
   },
   "repository": "https://github.com/HARDY8118/tpt.git",
@@ -27,13 +27,13 @@
     "@types/jest": "^27.0.2",
     "@types/node": "^16.10.3",
     "babel-jest": "^27.2.5",
-    "jest": "^27.2.5"
+    "jest": "^27.2.5",
+    "typescript": "^5.6.3"
   },
   "dependencies": {
     "cli-highlight": "^2.1.11",
     "colorts": "^0.1.63",
     "figlet": "^1.5.2",
-    "typescript": "^4.5.4",
     "validate": "^5.2.0"
   },
   "bin": {
@@ -44,6 +44,5 @@
     "LICENSE",
     "README.md",
     "package.json"
-  ],
-  "packageManager": "yarn@4.4.0"
+  ]
 }
