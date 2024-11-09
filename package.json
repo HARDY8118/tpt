@@ -1,6 +1,6 @@
 {
   "name": "textpresentation",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Text presention program on command line",
   "main": "./dist/tpt.js",
   "scripts": {
